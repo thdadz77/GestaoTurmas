@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>ex3 - javascript </title>
+    <meta name="description" content="Aplicação para ajudar encontrar animais">
+    <meta name="keywords" content="Aplicação para ajudar encontrar animais">
+
+</head>
+<body>
+    <h1>Integrando os recursos de interatividade do JS</h1>
+    <hr>
+    <script>
+          window.alert("Seja bem-vindo ao site");
+          let nome = window.prompt("QUAL É O SEU NOME? ");
+          window.alert(nome);
+          console.log(nome);
+          let resposta = window.confirm("vc deseja sair da pg?");
+          console.log(resposta);
+          document.write("seja bem-vindo" + nome);
+
+          if(resposta==true){
+            setTimeout(() => {
+                window.open("index.html");
+            }, 3000); // 3000 milissegundos = 3 segundos
+
+          }else{
+            window.confirm(nome + ", você vai continuar nesse pagina!");
+          }
+
+    </script>
+</body>
+
+
+</html>
