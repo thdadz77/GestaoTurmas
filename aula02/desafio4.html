@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <title>DESAFIO 2</title>
+    <meta name="description" content="Aplicação para..;">
+    <meta name="keywords" content="Aplicação para..;">
+    <meta name="author" content="Aplicação para..;">
+</head>
+
+<body>
+    <h1><mark>MANIPULANDO IMAGENS DO HTML ATRAVÉS DO JS</mark></h1>
+    <hr>
+    <div>
+       <img width="50%" src="img/goku.jpg" alt="Imagem goku" title="gokumaior">
+
+       <button onclick="trocarimagem()">Trocar Imagens</button>
+    </div>
+   
+    <script>
+        function trocarimagem() {
+            const tags_img = document.getElementsByTagName('img');
+            console.log("imgs", tags_img);
+            let tags_img_2 = tags_img[0];
+            if(tags_img_2.title=="gokumaior") {
+                tags_img_2.src = "img/goku.jpg"
+                tags_img_2.title="goku.jpg"
+            } else {
+                tags_img_2.src = "img/gokumaior.jpg"
+                tags_img_2.title = "gokumaior"
+            }
+        }
+
+
+             
+   
+
+    </script>
+   
+</body>
+
+</html>

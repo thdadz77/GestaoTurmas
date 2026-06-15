@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <title>AULA 01 JAVASCRIPT</title>
+    <meta name="description" content="Aplicação para..;">
+    <meta name="keywords" content="Aplicação para..;">
+    <meta name="author" content="Aplicação para..;">
+</head>
+
+<body>
+    <h1><mark>MANIPULANDO ELEMENTOS (TAGS) DO HTML ATRAVÉS DO JS</mark></h1>
+    <hr>
+    <div>
+        <p>EU AMO ACADEMIA</p>
+        <hr>
+        <p>EU AMO DORMIR COM A MINHA NAMORADA</p>
+        <p>EU AMO MEU MOR</p>
+    </div>
+    <script>
+        const tags_p = document.getElementsByTagName('p');
+        console.log(tags_p);
+        let tag_p_1 = tags_p[0];
+
+        tag_p_1.style.backgroundColor="RED";
+        tag_p_1.style.color="YELLOW";
+        tag_p_1.style.fontSize="20pt";
+        tag_p_1.style.textAlign="center";
+
+        let tag_p_2 = tags_p[1];
+        tag_p_2.style.backgroundColor="YELLOW";
+        tag_p_2.style.color="GREEN";
+        tag_p_2.style.fontSize="20pt";
+        tag_p_2.style.textAlign="center";
+       
+        let tag_p_3 = tags_p[2];
+        tag_p_3.style.backgroundColor="green";
+        tag_p_3.style.color="RED";
+        tag_p_3.style.fontSize="20pt";
+        tag_p_3.style.textAlign="center";
+
+        const tags_body = document.getElementsByTagName('body');
+        console.log(tags_body);
+        let tag_body = tags_body[0];
+
+        tag_body.style.backgroundColor="bisque"
+
+        const tags_div = document.getElementsByTagName('div');
+        console.log(tags_div);
+        let tag_div = tags_div[0];
+
+        tag_div.style.backgroundColor="aliceblue"
+
+
+
+    </script>
+   
+</body>
+
+</html>
